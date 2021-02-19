@@ -6,6 +6,7 @@ import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
 import dagger.hilt.android.components.ApplicationComponent
+
 import okhttp3.OkHttpClient
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
@@ -18,7 +19,7 @@ object NetworkModule {
 
     @Singleton
     @Provides
-    fun provideHttpClient() : OkHttpClient {
+    fun provideHttpClient(): OkHttpClient {
         return OkHttpClient.Builder()
             .readTimeout(15, TimeUnit.SECONDS)
             .connectTimeout(15, TimeUnit.SECONDS)
