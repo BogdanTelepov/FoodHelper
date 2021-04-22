@@ -11,6 +11,7 @@ class Constants {
         const val RECIPE_RESULT_KEY = "recipeBundle"
 
         const val FAVORITE_RECIPES_TABLE = "favorite_recipes_table"
+        const val FOOD_JOKE_TABLE = "food_joke_table"
 
         // API Query Keys
         const val QUERY_SEARCH = "query"
